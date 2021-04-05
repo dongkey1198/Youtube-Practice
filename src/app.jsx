@@ -10,12 +10,13 @@ function App() {
       method: 'GET',
       redirect: 'follow'
     };
-    
+  
     fetch("https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=AIzaSyAPnqJf7wqBR5cyH2kYF7Hmy2c6jGz7rOk", requestOptions)
       .then(response => response.json())
       .then(result => setVideos(result.items))
       .catch(error => console.log('error', error));
   }, []); //mount??
+
   return <VideoList videos = {videos}/>;
 }
 

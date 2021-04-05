@@ -1,0 +1,38 @@
+.container {
+  width: 50%;
+  padding: 0.2em;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  transition: transform 250ms ease-in;
+  background-color: white;
+}
+
+.video:hover {
+  transform: scale(1.1);
+  -webkit-box-shadow: 5px 6px 15px 0px #807c7c;
+  box-shadow: 5px 6px 15px 0px #807c7c;
+}
+
+.thumbnail {
+  width: 40%;
+  height: 100%;
+}
+
+.metadata {
+  margin-left: 0.2em;
+}
+
+.title,
+.channel {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.channel {
+  font-size: 0.6rem;
+}
